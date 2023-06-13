@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html  lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1", maximum-scale="1">
+        <title>Alura</title>
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+
+    <body class="imagen_fondo">
+        <header>
+            <img src="media/logo_alura.png" alt="logo_alura">
+        </header>
+
+        <main>
+            <section class="izquierda">
+
+                <textarea class = "area" name="" id="texto" cols="30" rows="10" style="border:none;" placeholder="Escribe aquí..."></textarea>
+                <div id="alerta_vacio" class="ocultar"></div>
+                <div class="botones">
+                    <input type="button" value="Encriptar" class="encriptar">
+                    <input type="button" value="Desencriptar" class="desencriptar">
+                </div>
+
+            </section>
+
+            <section class="derecha">
+
+                <div class="imagen_der">
+                    <img src="media/groot.png" alt="imagen_divertida">
+                </div>
+                <div class="titulo_sin_mensaje">
+                    <h3>No se encontró ningun mensaje...</h3>
+                </div>
+                <div class="texto_sin_mensaje">
+                    <p>Escribe el texto que desea encriptar o desencriptar.</p>
+                </div>
+                <div class="si_hay_texto ocultar">
+                    <div >
+                        <h3 class="titulo_mensaje">Mensaje encriptado :</h3>
+                        <!--<p class="txt_resultado" id="resultado"></p>-->
+                        <textarea class = "area" name="" id="resultado" cols="30" rows="10" style="border:none;" placeholder="resultado..." readonly></textarea>
+                    </div>
+                    <div id="alerta" class=""></div>
+                    <div class="botones">
+                        <input type="button" value="Copiar" class="copiar">
+                    </div>
+                </div>
+                
+
+            </section>
+        </main>
+
+        <footer>
+
+            <div class="contacto">
+                <p>Página diseñada por @Pablo</p>
+                <nav>
+                    <ul class="social-list">
+                        <li><a href="https://www.linkedin.com/in/pablo-chavez-developer/"><img src="media/linkedin_logo.png" alt="linkedin"></a></li>
+                        <li><a href="https://github.com/PabloChavez22"><img src="media/github_logo.png" alt="github"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="grupo-2">
+                <small><b>Alura</b> &copy; 2023</small>
+            </div>
+        </footer>
+
+        <script src="javascript/script.js"></script>
+    </body>
+</html>

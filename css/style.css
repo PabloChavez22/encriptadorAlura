@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+/*  ---------------header------------------  */
+
+header {
+    width: 100%;
+    height: 10vh;/*60px*/
+    background-color: blueviolet;
+    overflow: hidden;
+}
+
+header img {
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*  ---------------main--------------------  */
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagen_fondo{
+    background-image: url('../media/montania.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+
+section {
+    height: 100%;
+}
+
+.izquierda {
+    background-color: rgba(0, 60, 128, 0.404);
+    width: 60%;
+    margin-left: 20px;
+}
+
+.derecha {
+    background-color: rgba(173, 216, 230, 0.466);
+    width: 30%;
+    margin-right: 20px;
+
+    background-image: url('../media/montania.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.ocultar {
+    display: none;
+}
+.visible {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.alert-success {
+    background-color: rgba(0, 128, 0, 0.589);
+}
+.alert-danger {
+    background-color: rgba(255, 0, 0, 0.589);
+}
+.alert-error {
+    background-color: rgba(255, 0, 0, 0.712);
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+    font-size: 20px;
+}
+/*  -----izq----- */
+
+textarea {
+    width: 80%;
+    height: 60%;
+    resize: none;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 20px;
+}
+.encriptar, .desencriptar ,.copiar{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    .encriptar:hover, .desencriptar:hover, .copiar:hover{
+        box-shadow: 0 0 14px black;
+        background-color: aqua;
+        transition: 0.3s;
+    }
+
+/*  -----der----- */
+
+.imagen_der {
+    padding-top: 20px;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+}
+
+.imagen_der img {
+    height: 250px;
+}
+
+.titulo_sin_mensaje {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.texto_sin_mensaje {
+    width: 100%;
+    text-align: center;
+}
+/*  ---------------footer-----------------  */
+
+footer {
+    width: 100%;
+    height:10vh;
+    background-color: rgba(211, 211, 211, 0.582);
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    flex-shrink: 0;
+}
+.contacto {
+    padding-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+.social-list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+    .social-list img:hover {
+        filter: drop-shadow( 0 0 3px black);
+    }
+
+.social-list img{
+    height: 25px;
+}
+
+footer .grupo-2 {
+    background-color: grey;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 1280px) {
+    main {
+        height: 82vh;
+    }
+    footer {
+        height: auto;
+        position:relative;
+    }
+}
+
+@media (max-width: 912px) {
+    /* 700max-width se ejecuta cuando lo ancho sea menor a 700px*/
+    main {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .izquierda {
+        background-color: rgba(0, 60, 128, 0.404);
+        width: 90%;
+        text-align: center;
+        margin: 20px auto 10px auto;
+        display: block;
+        border-radius: 10px;
+    }
+
+        .botones {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    .derecha {
+        background-color: rgba(173, 216, 230, 0.466);
+        width: 90%;
+        margin: 10px auto 20px auto;
+        border-radius: 10px;
+        /*margin-right: 0;*/
+        display: block;
+    }
+
+        .titulo_mensaje {
+            margin-top: 20px;
+        }
+
+        .texto_sin_mensaje {
+            margin-bottom: 20px;
+        }
+
+    /*footer responsive*/
+
+    footer {
+        height: auto;
+        position:relative;
+    }
+
+        footer .grupo-2 {
+            bottom: 0;
+        }
+}
+    @media (max-width: 500px) {
+        footer .contacto {
+            flex-direction: column;
+            text-align: center;
+        }
+        .contacto p{
+            margin-bottom: 7px;
+        }
+    }
