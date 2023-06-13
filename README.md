@@ -50,7 +50,7 @@ inserción del texto que será encriptado o desencriptado, y el usuario debe pod
 ----
 
 ### IMAGES
-![imagen final del desafio Alura]()
+![imagen final del desafio Alura](https://github.com/PabloChavez22/encriptadorAlura/blob/main/media/Captura%20de%20pantalla.png)
 
 
 ### End
